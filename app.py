@@ -1,4 +1,3 @@
-
 import streamlit as st
 import requests
 
@@ -21,7 +20,7 @@ if st.button("Search Artworks"):
         with st.spinner("Searching the museum collection..."):
             try:
                 search_url = (
-                    "https://collectionapi.metmuseum.org/public/collection/v1/search"
+                    "https://collectionapi.metmuseum.org/public/collection/v1.1/search"
                 )
 
                 response = requests.get(
